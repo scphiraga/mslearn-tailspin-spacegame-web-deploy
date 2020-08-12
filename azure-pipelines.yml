@@ -62,7 +62,7 @@ stages:
         publishWebProjects: false
         arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
         zipAfterPublish: true
-        # 2020.08.12 Add(UI Test Error)
+        # 2020.08.12 Add(UI Test Error) 
         modifyOutputPath: true
 
     - publish: '$(Build.ArtifactStagingDirectory)'
